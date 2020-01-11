@@ -1,0 +1,18 @@
+-- Drops the burger_db if it already exists --
+DROP DATABASE IF EXISTS burger_db;
+
+-- Created the DB "burger_db" 
+CREATE DATABASE burger_db;
+
+-- Use the DB burger_db for all the rest of the script
+USE burger_db;
+
+-- Created the table "burgers"
+CREATE TABLE burgers (
+  id INTEGER(11) AUTO_INCREMENT NOT NULL,
+  burger_name VARCHAR(30) NOT NULL,
+  devoured BOOLEAN NOT NULL,
+  PRIMARY KEY(id)
+);
+
+
